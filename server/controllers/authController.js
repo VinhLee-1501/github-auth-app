@@ -53,13 +53,13 @@ export const validateAccessCode = async (req, res) => {
 };
 
 export const likeGithubUser = async (req, res) => {
-  const { phoneNumber, id } = req.body;
+  const { phone_number, github_user_id } = req.body;
   try {
-    const userRef = db.collection("users").doc(phoneNumber);
+    const userRef = db.collection("users").doc(phone_number);
     await userRef.set(
       {
         favorite_github_users:
-          admin.firestore.FieldValue.arrayUnion(id),
+          admin.firestore.FieldValue.arrayUnion(github_user_id),
       },
       { merge: true }
     );
