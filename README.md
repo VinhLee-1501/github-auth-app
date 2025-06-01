@@ -29,13 +29,13 @@ npm run dev
 ## Application Interface
 A simple OTP login flow via phone number with the following steps:
 1. Enter your phone number
-![App Screenshot](./server/screenshot/login.png)
+![Login Screenshot](server/screenshot/login.png)
 2. Receive OTP via SMS
-![App Screenshot](./server/screenshot/otp.png)
+![OTP Screenshot](server/screenshot/otp.png)
 3. Successful login
-![App Screenshot](./server/screenshot/loginSuccessfully.png)
+![Success Screenshot](server/screenshot/loginSuccessfully.png)
 4. Personal profile screen
-![App Screenshot](./server/screenshot/personal.png)
+![Parsonal Screenshot](server/screenshot/personal.png)
 ### Step 4: Run the application
 ```bash
 client
